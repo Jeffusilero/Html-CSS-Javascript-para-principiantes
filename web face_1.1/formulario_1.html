@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffusilero/formulario.com</title>
+    <style>
+
+        
+    </style>
+</head>
+<body>
+    <form action="base1.php" method="post" enctype="multipart/form-data"></form>
+    <h1>Formulario</h1>
+    <span style="color: brown; font-size: 20px; font-family: georgia; ">Datos personales</span> <br><br>
+
+    Nombres
+    <input type="text" name="nombres" size="25"> <br>
+
+    Apellido 
+    <input type="text" name="apellidos" size="25"> <br>
+
+    Email 
+    <input type="email" name="correo electronico" size="40"> <br>
+
+    Direccion
+    <input type="text" name="direccion" size="40"> <br>
+
+    Fecha de nacimiento
+    <input type="text" name="nacimiento" size="25" value="10/07/1994" disabled> <br>
+
+    Celular
+    <input type="text" name="celular" size="18" maxlength="14"> <br>
+
+    Pais de origen
+    <select name="paises" >
+        <optgroup label="America Sur" >
+            <option value="1">Ecuador</option>
+            <option value="2">Peru</option>
+            <option value="3">Colombia</option>
+            <option value="4">Chile</option>
+            <option value="5">Argentinca</option>
+            <option value="6">Brasil</option>
+        </optgroup>
+        <optgroup label="America Norte">
+            <option value="7">Canada</option>
+            <option value="8">Florida</option>
+            <option value="9">Texas</option>
+            <option value="10">Mexico</option>
+            <option value="11">Cuba</option>
+        </optgroup>
+    </select> <br><br>
+
+    <span style="color: brown; font-size: 20px;font-family: georgia">Datos academicos</span> <br><br>
+
+    Nivel de estudio <br>
+    <input type="checkbox" name="estudio" value="1">Bachiller <br>
+    <input type="checkbox" name="estudio" value="2">Tercer Nivel <br>
+    <input type="checkbox" name="estudio" value="3">Pstgrado <br>
+    <input type="checkbox" name="estudio" value="4">Maestria <br>
+    Titulo <input type="text" name="titulo" size="35"> <br><br>
+
+    <a href="index_1.html"><input type="button" value="Enviar"></a>
+
+
+    
+</body>
+</html>
