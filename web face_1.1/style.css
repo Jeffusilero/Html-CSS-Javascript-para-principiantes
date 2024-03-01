@@ -1,8 +1,27 @@
-body {
+.inicio {
     background-color:aqua ;
     text-align: center; 
     font-family: Cambria;
     font-style: oblique;
     font-weight: bold;
     font-variant: small-caps;
+}
+
+.login { 
+    background-color: bisque;
+    
+}
+
+.resal {
+        color: rgb(3, 70, 66);
+}
+
+#tlogin {color: brown; 
+
+}
+
+.cuadro {border-width: 1px;
+        border-style: dashed;
+        border-color: black; 
+
 }
