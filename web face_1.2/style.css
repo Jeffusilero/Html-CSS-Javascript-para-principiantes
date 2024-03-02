@@ -1,0 +1,28 @@
+.inicio1 {
+        color: rgb(2, 32, 2);
+}
+
+.index {
+        text-align: center;
+        font-size: 20px;
+        font-family: arial;
+        
+        
+}
+
+#titulo {
+        color: brown;
+        font-size: 38px;
+        font-family: tahoma;
+        font-style:normal;
+}
+
+input {
+        text-transform: capitalize;
+}
+
+.formulario1  {
+        background-color: rgb(238, 203, 109
+        );
+        margin: 150px;
+}
