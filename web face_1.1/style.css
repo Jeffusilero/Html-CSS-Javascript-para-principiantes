@@ -39,6 +39,22 @@
 
         padding: 5px;
         margin: 0px;
-    
+}
+
+#azul {
+        color: blue;
+}
+
+.lista {
+        list-style-type: disc;
+        list-style-image: url(./imagen/flecha.png);
+        list-style-position: inside;
+}
+
+.cuerpopython {
+        background-image: url(./imagen/python.png);
+        background-repeat: no-repeat;
+        background-position: 370px 0px;
+        
 
 }
