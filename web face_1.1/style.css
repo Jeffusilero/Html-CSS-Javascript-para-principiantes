@@ -21,7 +21,24 @@
 }
 
 .cuadro {border-width: 1px;
-        border-style: dashed;
-        border-color: black; 
+        border-style: inset;
+        border-color: black;
+        
+        border-top-style: dotted;
+        border-bottom-style: dotted;
+        border-top-color: blue;
+        border-bottom-color: blue;
+        padding: 8px;
+
+}
+
+.ejemplo {
+        border-style: solid;
+        border-width: 1px;
+        border-color: brown;
+
+        padding: 5px;
+        margin: 0px;
+    
 
 }
