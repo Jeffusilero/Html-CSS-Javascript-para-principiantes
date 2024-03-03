@@ -2,16 +2,20 @@
         color: rgb(2, 32, 2);
 }
 
-.index {
+.cuerpo {
         
         text-align: center;
         font-size: 20px;
         font-family: arial;
+
+        
+}
+
+.imagen {
         background-image: url(./imagen/login.jpg);
         background-repeat: no-repeat;
         background-position: 50% 35%;
-        background-size: 25%;
-        
+        background-size: 22%;
 }
 
 #titulo {
