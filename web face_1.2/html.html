@@ -39,7 +39,7 @@
     <!-- hace cursica el texto css -->
     <em>css</em>
 
-    <!-- referencia el texto javascript dentro de otra etiqueta -->
+    <!-- para referenciar el texto javascript dentro de otra etiqueta -->
     <span>javascript</span>
 
     <!-- nos redirige a una pagina ingresando el link y con 
@@ -62,6 +62,194 @@
     cc (correo en copia)-->
     <a href="mailto:jeffersonandres2002@hotmail.com?subject=correo&body=correo de 
     prueba&cc=jefflascano20@hotmail.com&bcc=jeffusilero@hotmail.com">Correo</a>
+
+    <!-- se asigna con # el item que debe estar declarado
+    previamente con name="concepto"-->
+    <a href="#concepto">Concepto</a>
+
+    <!-- se asigna a una etiqueta la cual sera llamada por href="#concepto" -->
+    <a name="concepto"></a>
+
+    <!-- nos redirige a un item especifico (concepto) del archivo html 
+    el cual esta almacenado en nuestra pc -->
+    <a href="index.html#concepto">Concepto</a>
+
+    <!-- tipos de input:
+        checkbox (crea casillas cuadradas que puede tomar 2 valores 
+        seleccion y no seleccionado-->
+    <input type="checkbox" name="datos_1">Datos_1
+    <input type="checkbox" name="datos_2">Datos_2
+
+    <!-- radio (crea casillas redondas)
+        name (debe tener el mismo nombre para que marque una sola opcion)
+        value (valor que llevara la casilla para el envio a la base de dato)-->
+    <input type="radio" name="titulos" value="1">titulo_1
+    <input type="radio" name="titulos" value="2">titulos_2
+
+        <!-- se usa para añadir acceso a otro archivo html o link de otras pagina con (https:/) -->
+        <a href="recuperar.html">¿Olvidaste tu contraseña</a> <br><br>
+    
+        <a href="registro.html">Registrarse</a>
+    </form>
+</div>
+
+    <!-- añade tablas en los cuales se usa: (with: 300 espacio en los cuadros)
+        tr (cuadros)
+        th (resalta en negrita el texto titulo)
+        td (contenido interno)-->
+    <table style="width: 300px;">
+
+    <!--thead (indica el encabezado de la tabla) 
+        tdody (el cuerpo para cuando se uso scrolls)
+        tfoot (indica la parte final de la tabla) -->
+        <thead>
+            <tr>
+                <th>precio</th>
+                <th>cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20.50</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <td></td>
+                <td>cantidad total 5</td>
+        </tfoot>
+    </table> 
+    
+    
+    <br><br>
+
+    <!-- lista 
+        ul (no ordenada)
+        li (descripcion dentro de la lista)-->
+    <ul>
+        <li>valor 1</li>
+        <li>valor 2</li>
+        <li>valor 3</li>
+        <li>valor 4</li>
+    </ul>
+    
+    <!-- ol (valor numerico ordenado) 
+        value=20 (indica que la lista comenzara desde el numero 20)-->
+    <ol >
+        <li value="20">valor 1</li>
+        <li>valor 2</li>
+        <li>valor 3</li>
+        <li>valor 4</li>
+    </ol>
+
+    <!--Cuadros de seleccion:
+        name (despues del nombre se debe agg [] para realizar multiple seleccion )
+        option:
+        value (valor llamado por la base de datos) 
+        el nombre entre option es el que llevara el cuadro de seleccion-->
+    <select name="Tlenguaje" id="Tlenguajes">
+        <option value="1">html</option>
+        <option value="2">css</option>
+        <option value="3">javascript</option>
+    </select>
+
+    <!--optgroup (agrupa valores del elemento option)
+        label (titulo que saldra en el cuadro seleccion)-->
+    <select name="Tlenguaje" id="Tlenguaje">
+        <optgroup label="">
+            <option value="1">html</option>
+            <option value="2">css</option>
+            <option value="3">javascript</option>
+        </optgroup>
+        <optgroup>
+            <option value="4">python</option>
+            <option value="5">mysql</option>
+        </optgroup>
+    </select>
+
+
+    <!-- enctype (multipart/form - sirve para agg texto e imagen al formulario) 
+        tipos de input:
+        file: (cargar un foto desde la pc)
+        password: (la contraseña se visualizara en aterisco)
+        button:
+        agrega un boton que dependera de javascript debe llevar
+        name (nombre para la base de datos )
+        value (nombre o valor que aparecera en el boton)
+        hidden:(registra la hora que se esta cargado el formulario a la 
+        base de datos oculto para el cliente)
+        email: (registrar correo electronico)
+        date: (agregar un calendario para seleccionar un fecha deseada)
+        number: (cuadro con numero que aumento como valla marcando)-->
+    <form action="base1.php" method="post" enctype="multipart/form-data">
+        seleccione su foto:
+        <input type="file" name="foto">
+        <input type="password" name="contraseña" size="20">
+        <input type="button" name="bot1" value="1">
+        <input type="hidden" name="hora" value="12:00">
+        <input type="email" name="correo">
+        <input type="date" name="calendario">
+        <input type="number" name="numeros">
+
+        <!-- contenido que aparece dentro de cada input  -->
+        value="valor"
+
+        <!-- marcada el item al cual se le agrega, aplica en:
+            input (ckeckbok - radio - text)
+            textarea (solo se debe agregar el contenido 
+            entre textarea)-->
+        checked
+
+        <!--marca el item al cual se le agrega aplica para:
+            select (option)-->
+        select 
+
+        <!-- se usa para inhabilitar aplica en:
+            (button - input - optgroup - option - select y textarea)-->
+        disabled
+
+        <!-- indica la cantidad de caracteres que se puede agregar -->
+        maxleght=
+
+        <!-- crea un foto de lectura, no se puede agregar campos aplica
+            para (input - textarea) -->
+        readonly
+
+        <!-- agrupa todos los controlos input en un recuadro  
+        egend: (titulo de cada grupo dentro de fieldset)-->
+        <fieldset>
+            <legend>Datos personales</legend>
+        </fieldset>
+
+        <!-- para enviar formulario por correo se usa
+        action (se coloca el correo principal con mailto y el asunto con subject)
+        enctype (detalla al formulario que puede llevar texto)-->
+        <form action="mailto:jeffersonandres2002@hotmail.com?
+        subject=formualario" method="post" enctype="text/plain"></form>
+
+        <!-- se coloca despues de la table para disponer un titulo a nuestra tabla -->
+        <caption>Titulo tabla</caption>
+
+        <!-- en la lista hay 2 metodos para expandir:
+            colspan (expande 3 espacio de la columna hacia la derecha)
+            rowspan (expande 3 espacio de la fila hacia abajo)-->
+        <td colspan="3">Requisitos</td>
+        <td rowspan="3">Lugares</td>
+
+        <!--dl (asociar un termino)
+            dl (donde iran encerrados los titulos)
+            dt (donde iras lo parrafos)-->
+        <dl>
+            <dt>concepto
+                <dd>programacion</dd>
+            </dt>
+        </dl>
+
+        <!-- para agregar comentario:
+        cols (ancho de recuadro)
+        rows (altura del recuadro)-->
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea> <br>
+
 
     
 </body>

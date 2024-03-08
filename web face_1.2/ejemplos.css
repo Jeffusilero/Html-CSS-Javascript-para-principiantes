@@ -1,0 +1,47 @@
+body {
+    /* color aplica para todas las etiquetas de html */
+    color: black;
+
+    /* color del fondo  */
+    background-color: black;
+
+    /* alinea al texto 
+        left    (izquierda)
+        center  (centro)
+        right   (derecha)
+        justify (justificar)*/
+    text-align: right;
+
+    /* coloca linea en el texto 
+        none        (no coloca nada)
+        underline   (linea debajo del texto)
+        overline    (linea arriba del texto)
+        linethrough (linea sobre el texto*/
+    text-decoration: none;
+
+    /* espacio entre cada caracter */
+    letter-spacing: 1px;
+
+    /* espacio entre cada palabra */
+    word-spacing: 1px;
+
+    /* primera linea del texto identada */
+    text-indent: 3;
+
+    /*  none        (no hace nada)
+        capitalize  (mayuscula primer caracter de cada palabra)
+        lowercase   (minuscula todo el texto)
+        uppercase   (mayuscula todo el texto)*/
+    text-transform: none;
+
+    /* tipo de fuentes en el navegador */
+    font-family: Arial;
+
+    /* tamaño de la fuente en pixeles */
+    font-size: 5px;
+
+    /* aplica estilo 
+        norma */
+    font-style: normal;
+    
+}

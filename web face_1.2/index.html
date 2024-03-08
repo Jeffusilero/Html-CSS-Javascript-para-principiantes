@@ -1,131 +1,23 @@
 <!DOCTYPE html>
 <html>
-<!-- encabezado de la pagina -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="with=device-with, initial-scala=1.0">
-    <!-- nombre que ira en la cabecera -->
     <title>web face</title>
-    <!-- se aplica los estilos de css integrado en html debe ir dentro de head -->
-    <style>
-        /* style que se aplica en el div como:
-        text-aling (posicion del texto)
-        background-color (color de fondo)
-        border (tamaño del borde)
-        borde-color (color del borde)
-        borde-style (estilo del borde) 
-         */
-        div {
-            text-align: center;
-            background-color: aquamarine;
-            border:1px;
-            border-color: black;
-            border-style: solid;
-        }
-        /* aplica en los titulos del label
-            font-size (tamaño de letra)
-            font-familia (tipo de letra) */
-        label {
-            font-size:20px;
-            font-family: verdana;
-
-        }
-        /* se aplica en tabla, en los cuadros y contenido interno lo siguientes
-        borde de la tabla
-        estilo de los tabla
-        color de la tabla */
-        table,th,td {
-            border: 1px solid black
-        }
+    <link rel="stylesheet" href="style.css" type="text/css">
     
-    </style>
 </head>
-
-<!-- cuerpo de la pagina -->
 <body>
     <div>
-
-    <!-- titulo de la pagina puede usar desde h1 hasta h6 -->
-    <h1>web face</h1>
-
-    <!-- para agregar imagen que se encuentre en tu pc o desde un link de internet
-    y con width se cambia el ancho de la imagen la altura es con height  -->
+    <h1 id="titulo">web face</h1>
     <img src="./img/index.jpg" alt="index" h width="150">
-
-    <!-- formulario
-        action (nombre de archivo que se conectara el formulario en la base de datos)
-        method (metodo que se aplica  /post mas recomendado / get no tan recomendado-->
     <form action="base1.php" method="post">
-
-        <!-- se usa label para declara el texto con la accion el input que se ingresara -->
         <label for="usuario">Usuario</label> <br>
-
-        <!-- typoe (tipos que se ingresa en el cuadro)
-            name (nombre declara para llamado en la base de datos)
-            id (identificar personalizar para unir el label for=)
-            size (tamaño del recuadro )
-            placeholder (texto en transparente de guia dentro el cuadro)-->
-        <input type="text" name="usuario" id="usuario" size="30" placeholder="usuario"> <br> <br>
+        <input type="text" name="usuario" id="usuario" size="20" placeholder="usuario">  <br><br>
         <label for="contraseña">Contraseña</label> <br>
-        <input type="password" name="contraseña" id="contraseña" size="30"> <br><br>
-
-        <!-- el boton tiene tipo
-        submit (enviar)
-        reset (borrar)
-        button (boton)-->
+        <input type="password" name="contraseña" id="contraseña" size="20" placeholder="ejemplo: jeffusilero">
+        <br><br>
         <button type="button">Login</button> <br><br>
-
-    <!-- se usa para añadir acceso a otro archivo html o link de otras pagina con (https:/) -->
-        <a href="recuperar.html">¿Olvidaste tu contraseña</a> <br><br>
-    
-        <a href="registro.html">Registrarse</a>
     </form>
-</div>
-
-    <!-- sirve para añadir tablas en los cuales se usa (with: 300 espacio en los cuadros)
-        tr (cuadros)
-        th (titulo resaltado)
-        td (contenido interno)
-
-        thead (para indicar que es el encabezado de la tabla) 
-        tdody (el cuerpo para cuando se uso scrolls)
-        tfoot (para indicar el final de la tabla) -->
-    <table style="width: 300px; text-align: center;">
-        <thead>
-            <tr>
-                <th>precio</th>
-                <th>cantidad</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>20.50</td>
-                <td>5</td>
-            </tr>
-        </tbody>
-        <tfoot>
-                <td></td>
-                <td>cantidad total 5</td>
-        </tfoot>
-    </table> <br><br>
-    <!-- lista 
-        ul (no ordenada)
-        li (descripcion dentro de la lista)-->
-    <ul>
-        <li>valor 1</li>
-        <li>valor 2</li>
-        <li>valor 3</li>
-        <li> valor 4</li>
-    </ul>
-    <!-- ol (valor numerico ordenado) 
-        value=20 (indica que la lista comenzara desde el numero 20 en adelante)
-        list-style-type (estilo de la lista)-->
-    <ol style="list-style-type: circle;">
-        <li value="20">valor 1</li>
-        <li>valor 2</li>
-        <li>valor 3</li>
-        <li>valor 4</li>
-    </ol>
-    
 </body>
 </html>

@@ -1,0 +1,16 @@
+body, header, section, footer {
+    text-align: center;
+    border:  1px solid black;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+section {
+    background-color: bisque;
+}
+
+footer {
+    background-color: cadetblue;
+}

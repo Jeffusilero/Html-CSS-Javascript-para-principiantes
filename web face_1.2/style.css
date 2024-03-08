@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+    background-color: bisque;
+    border:1px;
+    border-color: black;
+    border-style: solid;
+}
+
+label {
+    font-size:20px;
+    font-family: verdana;
+
+}
+
+table,th,td {
+    border: 1px solid black
+}
+
+#titulo {
+    color: chocolate;
+}
