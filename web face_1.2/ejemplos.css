@@ -1,47 +1,222 @@
 body {
-    /* color aplica para todas las etiquetas de html */
+/* APLICA PARA TODOS LOS ELEMENTOS HTML */
+
     color: black;
+    color: #000000;
+    color: rgb(0,0,0);
+    /* color aplica para todas las etiquetas de html
+    texto     (palabra clave)
+    notacion: (seguido de 6 caracteres)
+    1-2 (rojo)
+    3-4 (verde)
+    5-6 (azul)
+    rba:      (seguido de 3 caracteres)
+    1   (rojo)
+    2   (verde)
+    3   (azul)(*/
 
-    /* color del fondo  */
+
+/* APLICA PARA TODA LA PANTALLA DE LA PAGINA WEB   */
+
     background-color: black;
+    /* color del fondo  */
 
-    /* alinea al texto 
+
+/* APLICA PARA TEXTOS */
+
+    text-align: right;
+        /* alinea al texto 
         left    (izquierda)
         center  (centro)
         right   (derecha)
         justify (justificar)*/
-    text-align: right;
 
-    /* coloca linea en el texto 
+    text-decoration: none;
+        /* coloca linea en el texto 
         none        (no coloca nada)
         underline   (linea debajo del texto)
         overline    (linea arriba del texto)
         linethrough (linea sobre el texto*/
-    text-decoration: none;
 
-    /* espacio entre cada caracter */
     letter-spacing: 1px;
+        /* espacio entre cada caracter */
 
-    /* espacio entre cada palabra */
     word-spacing: 1px;
+        /* espacio entre cada palabra */
 
-    /* primera linea del texto identada */
     text-indent: 3;
+        /* primera linea del texto identada */
 
-    /*  none        (no hace nada)
+    text-transform: none;
+        /* none        (no hace nada)
         capitalize  (mayuscula primer caracter de cada palabra)
         lowercase   (minuscula todo el texto)
         uppercase   (mayuscula todo el texto)*/
-    text-transform: none;
 
-    /* tipo de fuentes en el navegador */
     font-family: Arial;
+        /* tipo de fuentes en el navegador */
 
-    /* tamaño de la fuente en pixeles */
     font-size: 5px;
+        /* tamaño de la fuente en pixeles */
 
-    /* aplica estilo 
-        norma */
     font-style: normal;
-    
+        /* aplica estilo 
+        norma   (texto normal)
+        italic  (texto semi curvo)
+        oblique (texto mas curvo)*/
+
+    font-variant: small-caps;
+        /*  small caps  (mayuscula tipo pequeña)
+        normal      (mayuscula normal) */
+
+    font-weight: normal;
+        /*  normal  (texto normal)
+        bold    (texto negrita)
+        bolder  (texto oscuro)
+        lighter (texto mas claro*/
+
+
+/* APLICA PARA BORDES */
+
+    border-width: 1px;        /* especifica un tamaño para el grosor del borde*/
+    border-style: solid;      /* define el estilo para el borde*/
+    border-color: #000000;  /* aplica para el color de los bordes*/
+        
+    border-style: solid;
+    /*  hidden (oculto)
+        dotted (borde en puntos)
+        dashed (borde rayas - lineas descontinua)
+        solid  (borde solido - lineas continuas)
+        double (borde doble - lineas continuas)
+        groove (borde biselado - luz desde arriba)
+        ridge  (borde biselado - luz desde abajo)
+        inset  (borde con profundidad - hacia dentro)
+        outset (borde con profundidad - hacia afuera)*/
+
+
+/* LADOS DE LOS BORDES */
+
+    border-top: 1px solid black;    /*parte superior*/
+    border-right: 1px solid black;  /*parte derecha*/
+    border-bottom: 1px solid black; /*parte inferior*/
+    border-left: 1px solid black;   /*parte izquierda*/
+
+/* APLICABLES A LOS BORDES (PARTES INTERNA Y EXTERNA) */
+
+    padding-top: 10px;      /* espacio del texto al borde superior*/
+    padding-right: 10px;    /* espacio del texto al borde derecho*/
+    padding-bottom: 10px;   /* espacio del texto al borde inferior*/
+    padding-left: 10px;     /* espacio del texto al borde izquierdo*/
+
+    margin-top: 10px;      /* estable un tamaño de margen superior*/
+    margin-right: 10px;    /* estable un tamaño de margen a la derecha*/
+    margin-bottom: 10px;   /* estable un tamaño de margen inferior*/
+    margin-left: 10px;     /* estable un tamaño de margen a la izquierda*/
+
+/* ATAJOS APLICABLES EN WIDTH - STYLE - COLOR - PADDING - MARGIN */
+
+    border-width: 1px;              /* tamaño a todos los bordes*/
+    border-width: 1px 2px;          /* tamaño a top/bottom y left/right*/
+    border-width: 1px 2px 3px;      /* tamaño a top - left/right - bottom*/
+    border-width: 1px 2px 3px 4px;  /* tamaño a top - right - bottom - left*/
+
+    border: 1px solid black;      /* aplica al borde en general las 3 propiedades*/
+
+    padding: 10px;      /* espacio del texto al todo el borde en general*/
+
+    margin: 10px;       /* estable el tamaño del margen en general*/
 }
+
+
+/* APLICA A LOS ELEMENTOS DECLARADOS CON CLASS= Y ID= */
+
+/* declara los valores ingresado al elemento class= del archivo html (varias veces)*/
+    .valor {
+        color: #000000;
+    }
+
+/* declara los valores ingresado al elemento id= del archivo html (1 sola vez)*/
+    #saldo {
+        color: #000000;
+    }
+
+
+/* APLICABLE PARA LAS LISTAS  */
+
+    #lista {
+        list-style-type: disc;        /* tipos de viñetas que se utilizara*/
+        list-style-position: inside;  /* estable o elimina identacion en la lista*/
+        list-style-image: url();      /* indica imagen para usar como viñeta de item*/
+
+        list-style-type: disc;
+        /*  lista con simbolos (ul): 
+            disc                (circulos oscuro)
+            circel              (circulo vacio)
+            square              (cuadrado oscuro)
+            disclosure-open     (triangulo hacia abajo)
+            disclosure-closed   (triangulo hacia la derecha)    
+            
+            lista numericas (ol):
+            decimal                 (orden numericos)
+            decimal-leading-zero    (numero con 0 al comienzo)
+            lower-roman             (romano en minuscula)
+            upper-roman             (romano en mayuscula)
+            lower-alpha             (letras minuscula)
+            upper-alpha             (letras mayuscula)*/
+
+        list-style-position:inside;     /*desplaza la primera linea hacia la derecha*/
+        list-style-position: outside;   /*sin desplazar el lado exterior de la lista*/
+
+        list-style-image: none;                
+            /* ninguna foto por defecto*/
+        list-style-image: url(./img/css.png);
+            /* nombre alojada en carpeta local - pc*/
+        list-style-image: url("link de internet");
+            /* url de la direccion donde esta alojada */           
+    }   
+
+
+/* APLICA PARA EL FONDO DE LA PAGINA WEB  */
+
+    .html{
+        background-color: #000000;    /*color del fondo*/
+        background-image: url();        /*estable imagen en el fondo*/   
+        background-repeat: repeat;      /*establece modo que se repite la imagen en el fondo*/
+        background-position: top;       /*estable la posicion de la imagen*/
+        background-attachment: scroll;  /*indica si la imagen permanece fija o se desplaza*/
+
+        background-image: url(./img/css.png);
+            /* imagen alojada en carpeta local - pc */
+        background-image: url("link de internet");
+            /* url de la direccion donde esta alojada */
+
+        background-repeat: repeat;
+            /*  repeat      (repite la imagen en todo el fondo hasta llenarlo)*
+                no-repeat   (no repite la imagen y la coloca izquierdo superior por defecto)
+                repeat-x    (repite la imagen en fila hacia la derecha)
+                repeat-y    (repite la imagen en columna hacia abajo)
+                space       (repita la imagen y rellena con espacio con huecos)
+                round       (repite la imagen y amplia cada repeticion para ajustar)*/
+    
+        background-position: top;
+            /*  puedes aplicar (left - center - right) a los modos:
+                top     (parte superior de la pagina)
+                center  (parte central de la pagina)
+                bottom  (parte inferior de la pagina) 
+                */
+
+        background-position: 70% 50%;
+            /* puede aplicar con porcentaje hasta el 100% 
+                70% (lado x hacia la derecha)
+                50% (lado y hacia abajo*/
+
+        background-position: 300px 100px;
+            /* puede aplicar pixeles hasta el 400px 
+                300px (lado x hacia la derecha)
+                100px (lado y hacia abajo)  */
+                
+        background-attachment:scroll;
+            /*  scroll  (imagen de fondo se desplaza al hacer scroll)
+                fixed   (imagen de fondo se mantiene fija al hacer scroll)*/
+    }   
+    
