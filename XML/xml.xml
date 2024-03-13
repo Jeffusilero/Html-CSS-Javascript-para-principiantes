@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trazabilidad>								
+	<RucSujetoPasivo>1790123456001</RucSujetoPasivo>							
+	<tipoIdeProveedor>R</tipoIdeProveedor>							
+	<IdeProveedor>1799876543001</IdeProveedor>							
+	<RazonSocialProveedor>EJEMPLO CFS</RazonSocialProveedor>							
+	<PaisProveedor>593</PaisProveedor>							
+	<FechaActivacion>01/03/2022</FechaActivacion>							
+	<producto>							
+		<codigoProducto>3031-018-011280-013-150032-66-593-000020</codigoProducto>						
+		<OrigenProducto>1</OrigenProducto>						
+		<Establecimiento>001</Establecimiento>						
+		<TipoMarcacion>2</TipoMarcacion>						
+		<UnidadesActivadas>350000</UnidadesActivadas>											
+		<DetalleLotesProduccion>						
+			<CodigoLote>1234ABC</CodigoLote>					
+			<CodigoLote>1235ABC</CodigoLote>					
+		</DetalleLotesProduccion>				
+	</producto>							
+	<producto>							
+	</producto>							
+</trazabilidad>								
